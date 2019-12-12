@@ -1,2 +1,6 @@
 print("Hello world!!")
 print("Welcome to Python programming")
+a=int(input("Enter first number : "))
+b=int(input("Enter Second number : "))
+print(a+b)
+print ("A", "B")
