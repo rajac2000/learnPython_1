@@ -1,0 +1,12 @@
+if strDict.get("Hello",None) != None:
+    print(strDict.get("Hello",None))
+else:
+    print("None")
+
+strDict ={"Hello":34}
+
+chkWord=strDict.get("Hell0",None)
+if (chkWord) != None:
+    print(chkWord)
+else:
+    print("None")
