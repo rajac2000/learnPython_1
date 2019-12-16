@@ -10,3 +10,30 @@ if (chkWord) != None:
     print(chkWord)
 else:
     print("None")
+
+
+print("----------------------------------------------------------------------------------")
+print(" Original Text",mode = 'r',encoding = 'utf-8')
+print("----------------------------------------------------------------------------------")
+print(str)
+print("----------------------------------------------------------------------------------")
+print("----------------------------------------------------------------------------------")
+strList = str.split()
+strDict ={}
+for words in strList:
+    chkWord = strDict.get(words, None)
+    if (chkWord == None):
+        strDict[words] = 1
+    else:
+        temp = chkWord
+        temp += 1
+        strDict[words] = temp
+f.close()
+print("----------------------------------------------------------------------------------")
+print(" The result")
+print("----------------------------------------------------------------------------------")
+print("Word                  -  Count")
+print("----------------------------------------------------------------------------------")
+for keys in sorted(strDict):
+    print("%-20s  -  %d" % (keys,strDict.get(keys)))
+print('-----
